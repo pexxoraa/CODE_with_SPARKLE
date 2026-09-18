@@ -22,4 +22,4 @@ include = ["sparkle_coder*"]
 sparkle_coder = ["ui/*"]
 
 [project.urls]
-Repository = "https://github.com/pexxoraa/SPARKLE-CODER"
+Repository = "https://github.com/pexxoraa/CODE_with_SPARKLE"

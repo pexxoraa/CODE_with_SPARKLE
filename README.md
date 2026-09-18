@@ -1,12 +1,64 @@
 # SPARKLE CODER — personal edition
 
 A local browser app for your personal NVIDIA Nemotron coding agent.
-Chat with the agent, select projects, approve commands, inspect file changes,
-review checks, and resume saved tasks without using a terminal interface.
+SPARKLE CODER helps you chat with a coding agent, work in real project folders,
+approve commands, inspect file changes, review checks, and resume saved tasks
+without needing a terminal-first workflow.
 
 Version **0.5.0**. Open **OPEN_FIRST.html** or read [START_HERE.md](START_HERE.md).
-Python **3.11+** is required once; there are no third-party runtime packages.
-Launchers are included for Windows, macOS, and Linux.
+Python **3.11+** is required; there are no third-party runtime packages for the
+basic app experience. Launchers are included for Windows, macOS, and Linux.
+
+## Quick start
+
+1. Clone the repo and open the project folder.
+2. Run the launcher for your platform:
+   - Linux: `./Start_Linux.sh`
+   - Windows: `Start_Windows.vbs` or `Open_SPARKLE_CODER.pyw`
+   - macOS: `SPARKLE_CODER.app`
+3. Choose or create a project.
+4. Connect a compatible Nemotron endpoint in the app settings.
+5. Start a task, review approvals, and inspect saved task history.
+
+## Features
+
+- Local browser-based workflow for personal coding tasks
+- Project-aware file inspection and edits
+- Command approval flow with visible output and recovery guidance
+- Saved sessions, undo, and resumable task history
+- Checks, verification summaries, and plain-language explanations
+- Portable project storage with backups and migration support
+
+## Documentation
+
+- [START_HERE.md](START_HERE.md) — first-run instructions
+- [CLI_REFERENCE.md](CLI_REFERENCE.md) — terminal and developer reference
+- [WHAT_CHANGED.md](WHAT_CHANGED.md) — feature history and changes
+- [TEST_REPORT.md](TEST_REPORT.md) — validation notes
+
+## Project structure
+
+- [sparkle_coder](sparkle_coder) — app runtime and core logic
+- [tests](tests) — verification and regression tests
+- [examples](examples) — example configuration files
+- [PROJECTS](PROJECTS) — managed projects directory created at runtime
+- [APP_DATA](APP_DATA) — local app settings and state created at runtime
+
+## Configuration
+
+SPARKLE CODER uses a compatible OpenAI-style Nemotron endpoint. Create or edit
+`nemotron.toml` in your project if you want project-specific settings. API keys
+should be entered only in the app or kept in environment variables, not committed
+into source control.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+## Contributing
+
+Issues, fixes, and improvements are welcome. Keep changes focused and validate
+with the test suite before opening a pull request.
 
 ## Simple explanations and project folders in 0.5.0
 
