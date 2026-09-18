@@ -1,5 +1,7 @@
 # SPARKLE CODER — personal edition
 
+![CI](https://github.com/pexxoraa/CODE_with_SPARKLE/actions/workflows/test.yml/badge.svg)
+
 A local browser app for your personal NVIDIA Nemotron coding agent.
 SPARKLE CODER helps you chat with a coding agent, work in real project folders,
 approve commands, inspect file changes, review checks, and resume saved tasks
@@ -9,13 +11,38 @@ Version **0.5.0**. Open **OPEN_FIRST.html** or read [START_HERE.md](START_HERE.m
 Python **3.11+** is required; there are no third-party runtime packages for the
 basic app experience. Launchers are included for Windows, macOS, and Linux.
 
+## Install
+
+### Option 1: run from source
+
+```bash
+git clone https://github.com/pexxoraa/CODE_with_SPARKLE.git
+cd CODE_with_SPARKLE
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .
+```
+
+Then launch the app:
+
+- Linux: `./Start_Linux.sh`
+- Windows: `Start_Windows.vbs` or `Open_SPARKLE_CODER.pyw`
+- macOS: `SPARKLE_CODER.app`
+
+### Option 2: build a package
+
+```bash
+python -m pip install --upgrade pip build
+python -m build
+```
+
+This creates distributable wheel and source archive artifacts in the `dist/` folder.
+
 ## Quick start
 
 1. Clone the repo and open the project folder.
-2. Run the launcher for your platform:
-   - Linux: `./Start_Linux.sh`
-   - Windows: `Start_Windows.vbs` or `Open_SPARKLE_CODER.pyw`
-   - macOS: `SPARKLE_CODER.app`
+2. Run the launcher for your platform.
 3. Choose or create a project.
 4. Connect a compatible Nemotron endpoint in the app settings.
 5. Start a task, review approvals, and inspect saved task history.
